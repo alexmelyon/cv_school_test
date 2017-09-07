@@ -1,3 +1,5 @@
+package com.github.alexmelyon.camera
+
 import org.opencv.core.Mat
 import java.awt.image.BufferedImage
 

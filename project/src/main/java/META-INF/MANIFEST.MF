@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: kotlin-stdlib-jre7-1.1.4-3.jar kotlin-stdlib-jre8-1.1.4-3.
+ jar kotlin-stdlib-1.1.4-3.jar opencv-330.jar annotations-13.0.jar
+Main-Class: com.github.alexmelyon.cv_school_test.MainKt
+

@@ -1,3 +1,5 @@
+package com.github.alexmelyon.camera
+
 import java.awt.Graphics
 import java.awt.Image
 import java.awt.image.ImageObserver
