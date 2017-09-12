@@ -80,9 +80,14 @@ fun processFile(filename: String, n: Int, coords: CoordsXY) {
     // 5. Gaussian noise
     val gauss = Mat(cropped.size(), cropped.type())
     Core.randn(gauss, 0.0, Math.sqrt(255.0))
-    val gaussian = Mat()
-    Core.add(cropped, gauss, gaussian)
+    val gaussian = cropped + gauss
     imwriteAssert("../fragments_noise/${name}_${n}_noise.png", gaussian)
+}
+
+operator fun Mat.plus(other: Mat): Mat {
+    val res = Mat()
+    Core.add(this, other, res)
+    return res
 }
 
 enum class FlipCode {
